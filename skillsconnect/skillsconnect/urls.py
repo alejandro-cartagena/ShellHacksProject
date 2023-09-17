@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from dbcomp import views
+from dbcompa import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^api/dbcomp/$', views.skillscompanies)
+    re_path(r'^api/dbcompa/$', views.skillscompanies)
 ]
