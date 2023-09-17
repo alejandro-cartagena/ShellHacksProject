@@ -1,7 +1,16 @@
+.main-page{
+    background-color: whitesmoke;
+}
+.resume-input{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optionally center horizontally */
+    width: 50%;
+    margin: 50px auto;
+}
 .btn-upload{
     color: white;
-    background-color: #275EFE;
-    display: flex;
+    background-color: #000;
     outline: none;
     cursor: pointer;
     border: 0;
@@ -14,23 +23,24 @@
     font-size: 14px;
     margin: 20px;
 }
-.container{
+.container-main{
     display: flex;
 }
 .recommended-container{
     display: flex;
-    margin-left: 200px;
+    justify-content: center;
+    text-align: center;
 }
 .job-container{
     width: 80%;
+    margin: 20px;
 }
 .job-result{
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 5px;
     border: 1px solid gray;
-    border-radius: 45%;
+    border-radius: 50%;
     padding-top: 5px;
-    height: 25px;
+    height: 30px;
     width: 40px;
     text-align: center;
 }
@@ -44,9 +54,15 @@
     display: block;
 }
 .filter-search{
-    width: 15%;
+    width: 12%;
+    margin-left: 60px;
 }
 .vertical-line{
     border-left: 1px solid #000;
-    height: 100%; 
+    height: 100vh; 
 }
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }

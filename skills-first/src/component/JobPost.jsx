@@ -4,12 +4,23 @@ import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import "./JobPost.css"
 
 function JobPost(props) {
+    
+    const colors = [
+        { background: '#FFCF9D' },
+        { background: '#8DDFCB' },
+        { background: '#D8B4F8' },
+        { background: '#CAEDFF' },
+        { background: '#FFC7EA' },
+        { background: '#B4B4B3' }
+      ];
+    let backgroundColor = colors[props.index % colors.length];
+
   return (
-    <div>
-        <div className="job-info">
+    <div className="job-item">
+        <div style={ backgroundColor } className="job-info data-item-border">
             <div className="date-posted">
-                <div><p>{props.date}</p></div>
-                <div><FontAwesomeIcon icon={faBookmark} /></div>
+                <div className="date-left-item data-item-border"><p className="date-text">{props.date}</p></div>
+                <div className="data-item-border date-right-item"><FontAwesomeIcon className="date-text date-bookmark-icon" icon={faBookmark} /></div>
             </div>
             <div>
                 <p>{props.company}</p>
@@ -25,11 +36,11 @@ function JobPost(props) {
             </div>
         </div>
         <div className="pay-detail">
-            <div>
-                <p>{props.pay}</p>
-                <p>{props.location}</p>
+            <div >
+                <p className="pay-detail-text"><strong>{props.pay}</strong></p>
+                <p className="pay-detail-text">{props.location}</p>
             </div>
-            <button>Detail</button>
+            <button className="btn-detail"> Detail</button>
         </div>
     </div>
   );
