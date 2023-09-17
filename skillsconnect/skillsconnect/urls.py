@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 from dbcompa import views
+from django.urls import path
+from dbcompa import FileUploadView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^api/dbcompa/$', views.skillscompanies)
+    re_path(r'^api/dbcompa/$', views.skillscompanies),
+    path('upload/', FileUploadView.as_view(), name='file_upload')
+    # re_path(r'^api/dbcompa/$, FileUploadView.as_view(), name='file_upload')
 ]
