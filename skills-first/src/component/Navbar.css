@@ -1,28 +1,13 @@
-.App {
-  /* text-align: center; */
+body {
+    margin: 0;
 }
 
 .container {
     margin: 0 2.5em;
-    max-width: 1000px;
-    
 }
-
-/* Typography */
-h2 {
-    margin: 0;
-}
-
-h3 {
-    margin: 0;
-}
-
-/* Header Styles */
-
 header {
     background-color: black;
     color: white;
-    /* margin-bottom: 2em; */
 }
 
 nav ul {
@@ -52,26 +37,4 @@ li:not(:last-child) {
 .link:hover,
 .link:focus {
     color: #00b4d8;
-}
-
-
-@media (min-width: 900px) {
-  /* Typography */
-  p {
-      font-size: 1.125rem;
-  }
-
-  h2 {
-      margin: 0;
-      font-size: 2rem;
-  }
-
-  h3 {
-      font-size: 1.185rem;
-  }
-
-  .container {
-      margin: 0 auto
-
-  }
 }

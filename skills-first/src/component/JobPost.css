@@ -1,0 +1,60 @@
+.job-item{
+    width: 30%; 
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: white;
+    min-width: 250px;
+}
+.date-posted{
+    display: flex;
+    justify-content: space-between;
+}
+.job-info{
+    padding: 10px;
+}
+.data-item-border{
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: white;
+}
+.date-left-item{
+    flex: .5;
+}
+.date-right-item{
+    flex: .15;
+    text-align: center;
+    padding-top: 3px;
+    width: 50px;
+}
+.date-right-item2{
+
+}
+.date-text{
+    margin: 5px;
+}
+.pay-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.pay-detail-text{
+    font-size: 14px;
+    padding-left: 10px;
+}
+.btn-detail{
+    flex: .4;
+    height: 30px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+@media (max-width: 500px) {
+    .job-item {
+        width: 35%;
+    }
+}
