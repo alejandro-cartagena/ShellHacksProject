@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 2.5em;
+}
+header {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+}
+
+li:not(:last-child) {
+    margin-right: 1em;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.2s;
+}
+
+.link:hover,
+.link:focus {
+    color: #00b4d8;
+}
