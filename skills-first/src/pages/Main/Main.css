@@ -1,0 +1,52 @@
+.btn-upload{
+    color: white;
+    background-color: #275EFE;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    min-width: 113px;
+    padding: 8px 20px 8px 12px;
+    border-radius: 9px;
+    line-height: 24px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 20px;
+}
+.container{
+    display: flex;
+}
+.recommended-container{
+    display: flex;
+    margin-left: 200px;
+}
+.job-container{
+    width: 80%;
+}
+.job-result{
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid gray;
+    border-radius: 45%;
+    padding-top: 5px;
+    height: 25px;
+    width: 40px;
+    text-align: center;
+}
+.filter-item{
+    display: block; 
+    margin-bottom: 5px;
+}
+.filter-list{
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    display: block;
+}
+.filter-search{
+    width: 15%;
+}
+.vertical-line{
+    border-left: 1px solid #000;
+    height: 100%; 
+}
