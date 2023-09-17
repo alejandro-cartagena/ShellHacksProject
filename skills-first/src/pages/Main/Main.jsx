@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Navbar from "../../component/Navbar";
 import "./Main.css"
 import JobPost from "../../component/JobPost";
+import DragAndDrop from "../../component/DragAndDrop";
 
 function Main() {
 
@@ -28,27 +29,31 @@ function Main() {
       formData.append('resume', selectedFile);
         console.log("Working");
       
-    //   fetch('https://example.com/upload', {
-    //     method: 'POST',
-    //     body: formData,
-    //   })
-    //   .then(response => response.json())
-    //   .then(data => console.log(data))
-    //   .catch(error => console.error('Error:', error));
+      fetch('https://example.com/upload', {
+        method: 'POST',
+        body: formData,
+      })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
     }
   };
 
   return (
     <div className="main-page">
         <Navbar />
-        <div className="resume-input">
+
+        <DragAndDrop />
+        
+        
+        {/* <div className="resume-input">
             <input 
                 type="file" 
                 accept=".pdf, .doc, .docx" 
                 onChange={handleFileChange} 
             />
             <button className="btn-upload" onClick={handleUpload}> Upload</button>
-        </div>
+        </div> */}
         <div className="container-main">
             <div className="filter-search">
                 <div className="filter-search-text">

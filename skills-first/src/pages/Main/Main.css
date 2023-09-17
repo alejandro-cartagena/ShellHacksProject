@@ -4,7 +4,7 @@
 .resume-input{
     display: flex;
     align-items: center;
-    justify-content: center; /* Optionally center horizontally */
+    justify-content: center; 
     width: 50%;
     margin: 50px auto;
 }
