@@ -19,10 +19,11 @@ from django.urls import path, re_path
 from dbcompa import views
 from django.urls import path
 from dbcompa import FileUploadView
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^api/dbcompa/$', views.skillscompanies),
-    path('upload/', FileUploadView.as_view(), name='file_upload')
+    re_path(r'^api/dbcompa/$', views.skillscompanies, name='companies_information'),
+    path('upload/', views.resumeParserJSON, name='resume_upload')
     # re_path(r'^api/dbcompa/$, FileUploadView.as_view(), name='file_upload')
 ]
