@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    letter-spacing: 0.2px;
 }
 
 .container {
@@ -117,12 +118,24 @@ img {
 
 .section-component-black {
     text-align: center;
-    background-color: black;
+    background: linear-gradient(black, rgb(88, 87, 87));
     color: whitesmoke;
 }
 
 .component-container {
-    padding: 5em 0;
+    padding: 5em 3em;
+}
+
+@media (min-width: 900px) {
+    .component-container {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+.component-subtitle {
+    color: dimgray;
+    opacity: 0.7;
 }
 
 .component-p {
@@ -144,7 +157,7 @@ img {
 .component-btn:hover,
 .component-btn:focus {
     font-weight: 700;
-    background: linear-gradient(#00b4d8, #7de2f6);
+    background: linear-gradient(black, rgb(88, 87, 87));
 }
 
 .component-btn-link {
@@ -158,7 +171,7 @@ img {
 footer {
     color: #FFF;
     text-align: center;
-    background: linear-gradient(black, rgb(88, 87, 87));
+    background-color: black;
     padding: 2em 0;
 }
 

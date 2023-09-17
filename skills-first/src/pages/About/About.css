@@ -3,19 +3,67 @@
 /* Main Section */
 .about-us-title {
     text-align: center;
-    margin-bottom: 2em;
+    margin: 2em 0;
 }
+
+
+/* .team-components {
+    margin: 0 auto;
+} */
+
+.team-components {
+    /* border: solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .teammate {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 450px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 6px;
+    background-color: #e9ecef;
+    opacity: 0.8;
+    transition: 0.2s;
+    margin:  0 auto 2em auto;
+    /* margin: 0 auto; */
 }
 
+.teammate:hover {
+    opacity: 1.0;
+    scale: 1.05;
+}
+
+@media (max-width: 580px) {
+    .teammate {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
 .team-img {
-    width: 45%;
+    width: 35%;
     border-radius: 50%;
 }
 
 .team-text {
-    width: 45%;
+    width: 50%;
 }
+
+.team-subtitle {
+    font-size: 0.85rem;
+    color: gray;
+    margin: 0;
+}
+
+.main-section-about {
+    margin-bottom: 4em;
+}
+

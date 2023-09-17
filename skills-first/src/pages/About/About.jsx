@@ -24,25 +24,68 @@ function About() {
 
       <main className="main-section-about">
         <div className="container">
-          <h1 className="about-us-title">About Us.</h1>
+          <h1 className="about-us-title">Meet Our Team!</h1>
 
           <div className="team-components">
-            <div className="teammate">
-              <img className="team-img" src="../../alejandro-pic.jpeg" alt="" />
-              <div className="team-text">
-                <h3 className="team-title">Alejandro Cartagena</h3>
-                <p className="team-subtitle">Front end developer.</p>
-              </div>
 
+            <div className="container">
+              <div className="teammate">
+                <img className="team-img" src="../../alejandro-pic.jpeg" alt="" />
+                <div className="team-text">
+                  <h3 className="team-title">Alejandro Cartagena</h3>
+                  <p className="team-subtitle">Front end developer</p>
+                  <p className="team-skills">React, Git, Figma, UI Design</p>
+                </div>
+
+              </div>
             </div>
+
+            <div className="container">
+              <div className="teammate">
+                <img className="team-img" src="../../nicole-pic.jpeg" alt="" />
+                <div className="team-text">
+                  <h3 className="team-title">Nicole Gentil</h3>
+                  <p className="team-subtitle">Front end developer</p>
+                  <p className="team-skills">React, Git, Figma, UI Design</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div className="container">
+              <div className="teammate">
+                <img className="team-img" src="../../bryan-pic.jpeg" alt="" />
+                <div className="team-text">
+                  <h3 className="team-title">Bryan Virgil</h3>
+                  <p className="team-subtitle">Backend developer</p>
+                  <p className="team-skills">Python, Django, REST API Framework</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div className="container">
+              <div className="teammate">
+                <img className="team-img" src="../../jackie-pic.jpeg" alt="" />
+                <div className="team-text">
+                  <h3 className="team-title">Jacquelyn Shelby</h3>
+                  <p className="team-subtitle">Backend developer</p>
+                  <p className="team-skills">Python, Django, REST API Framework</p>
+                </div>
+
+              </div>
+            </div>
+
           </div>
 
         </div>
-
   
       </main>
 
-
+      <footer>
+            <p className="footer-text">Skills Connect</p>
+            <p className="footer-subtitle">Copywrite ©2023</p>
+      </footer>
 
 
     </div>
