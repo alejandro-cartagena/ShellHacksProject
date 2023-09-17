@@ -19,8 +19,8 @@ function JobPost(props) {
                 </div>
             </div>
             <div>
-                {props.position.forEach(element =>{
-                    return(<div className="position-available"> {element} </div>)
+                {props.position.map(element =>{
+                    <div className="position-available"> {element} </div>
                 })}
             </div>
         </div>

@@ -30,7 +30,7 @@ function Main() {
                     <li className="filter-item"><input type="checkbox"/> Volunteering</li>
                 </ul>
             </div>
-            <div class="vertical-line"></div>
+            <div className="vertical-line"></div>
             <div className="job-container">
                 <div className="recommended-container">
                     <h2>Recommended Jobs</h2>
