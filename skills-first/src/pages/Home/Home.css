@@ -1,0 +1,173 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 2.5em;
+    max-width: 1000px;
+    
+}
+
+/* Typography */
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+/* Header Styles */
+
+header {
+    background-color: black;
+    color: white;
+    /* margin-bottom: 2em; */
+}
+
+nav ul {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+}
+
+li:not(:last-child) {
+    margin-right: 1em;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.2s;
+}
+
+.link:hover,
+.link:focus {
+    color: #00b4d8;
+}
+
+/* Main section styles */
+
+.section-main {
+    /* background: linear-gradient(#00b4d8, #48cae4); */
+    /* color: #FFF; */
+    padding: 3em 0;
+}
+
+.main-section-img {
+    margin-bottom: 1em;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media (min-width: 900px) {
+    /* Typography */
+    p {
+        font-size: 1.125rem;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.185rem;
+    }
+
+    .container {
+        margin: 0 auto
+
+    }
+    .main-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-section-img {
+        width: 45%;
+        margin-bottom: 0;
+    }
+
+    .main-section-text {
+        width: 45%;
+    }
+}
+
+
+/* Section Component */
+
+.section-component {
+    text-align: center;
+}
+
+.section-component-black {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.component-container {
+    padding: 5em 0;
+}
+
+.component-p {
+    margin-bottom: 2.5em;
+}
+
+.component-btn {
+    cursor: pointer;
+    border-radius: 6px;
+    display: block;
+    width: 50%;
+    border: none;
+    margin: 0 auto;
+    padding: 1em 0;
+    background-color: black;
+    transition: 0.2s;
+}
+
+.component-btn:hover,
+.component-btn:focus {
+    font-weight: 700;
+    background: linear-gradient(#00b4d8, #7de2f6);
+}
+
+.component-btn-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+footer {
+    color: #FFF;
+    text-align: center;
+    background: linear-gradient(black, rgb(88, 87, 87));
+    padding: 2em 0;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.footer-subtitle {
+    font-size: 0.75rem;
+    margin: 0;
+    opacity: 0.7;
+}
