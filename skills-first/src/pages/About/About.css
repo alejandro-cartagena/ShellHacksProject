@@ -1,0 +1,21 @@
+
+
+/* Main Section */
+.about-us-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.teammate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-img {
+    width: 45%;
+    border-radius: 50%;
+}
+
+.team-text {
+    width: 45%;
+}
