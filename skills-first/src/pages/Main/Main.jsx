@@ -17,10 +17,11 @@ function Main() {
 
     const [selectedFile, setSelectedFile] = useState(null);
 
+
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
   };
-
+  
   const handleUpload = () => {
     if (selectedFile) {
       const formData = new FormData();
@@ -50,14 +51,16 @@ function Main() {
         </div>
         <div className="container-main">
             <div className="filter-search">
-                <h4>Filter</h4>
-                <ul className="filter-list">
-                    <li className="filter-item" ><input type="checkbox"/> Full time</li>
-                    <li className="filter-item"><input type="checkbox"/> Part time</li>
-                    <li className="filter-item"><input type="checkbox"/> Internship</li>
-                    <li className="filter-item"><input type="checkbox"/> Project Work</li>
-                    <li className="filter-item"><input type="checkbox"/> Volunteering</li>
-                </ul>
+                <div className="filter-search-text">
+                    <h4>Filter</h4>
+                    <ul className="filter-list">
+                        <li className="filter-item"><input className="checkbox" type="checkbox"/> Full time</li>
+                        <li className="filter-item"><input className="checkbox" type="checkbox"/> Part time</li>
+                        <li className="filter-item"><input className="checkbox" type="checkbox"/> Internship</li>
+                        <li className="filter-item"><input className="checkbox" type="checkbox"/> Project Work</li>
+                        <li className="filter-item"><input className="checkbox" type="checkbox"/> Volunteering</li>
+                    </ul>
+                </div>
             </div>
             <div className="vertical-line"></div>
             <div className="job-container">

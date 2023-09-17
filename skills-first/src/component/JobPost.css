@@ -5,6 +5,7 @@
     border-radius: 10%;
     padding: 5px;
     background-color: white;
+    min-width: 250px;
 }
 .date-posted{
     display: flex;
@@ -50,4 +51,10 @@
     border: none;
     border-radius: 10px;
     margin: 20px 10px;
+}
+
+@media (max-width: 500px) {
+    .job-item {
+        width: 35%;
+    }
 }

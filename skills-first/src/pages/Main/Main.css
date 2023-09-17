@@ -53,10 +53,23 @@
     padding: 0;
     display: block;
 }
-.filter-search{
-    width: 12%;
-    margin-left: 60px;
+
+.checkbox {
+    margin: 0;
 }
+
+.filter-search{
+    width: 15%;
+    min-width: 170px;
+    /* margin-left: 60px; */
+}
+
+.filter-search-text {
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+
 .vertical-line{
     border-left: 1px solid #000;
     height: 100vh; 
